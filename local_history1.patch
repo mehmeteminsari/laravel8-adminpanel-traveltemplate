@@ -1,0 +1,23 @@
+Index: app/Http/Kernel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/Http/Kernel.php b/app/Http/Kernel.php
+--- a/app/Http/Kernel.php	(date 1612780318292)
++++ b/app/Http/Kernel.php	(date 1612780318292)
+@@ -2,7 +2,6 @@
+ 
+ namespace App\Http;
+ 
+-use App\Http\Middleware\CheckAdmin;
+ use Illuminate\Foundation\Http\Kernel as HttpKernel;
+ 
+ class Kernel extends HttpKernel
+@@ -63,6 +62,5 @@
+         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
+         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+-        'admin'=>CheckAdmin::class,
+     ];
+ }
